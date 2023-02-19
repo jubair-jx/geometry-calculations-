@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometric-Genius</title>
+    
+    <!-- Tailwind File -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ==============Header Part Start================ -->
+    <header class="bg-[#1090D81A] w-[90%] mx-auto rounded-md mt-8 h-20 flex justify-between">
+        <div class="px-5 py-3">
+            <h1 class="text-3xl font-bold text-[#111111CC]">Interactive</h1>
+            <p class="text-lg font-medium text-slate-500">Geometry Genius</p>
+        </div>
+        <div class="px-10 py-6">
+            <a href="blog.html" class="bg-[#1090D8] px-7 py-2 pt-2 rounded-md text-white">Blog</a>
+        </div>
+    </header>
+
+    <!-- ==============Header Part End================ -->
+    <!--=========== Main Area Part Start=========== -->
+    <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row mt-10 ">
+        <div  class="w-full md:w-[70%] lg:w-[65%] mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- First Cart -->
+            <div id="card-hover1" class="h-[85] w-full px-4 rounded-lg py-6  shadow-xl border">
+                <figure>
+                  <img class="w-full h-44" src="images/triangle.png" alt="Shoes" />
+                </figure>
+               <div class="text-center mt-5 ">
+                <h2 id="triangle-head" class="text-2xl font-semibold text-[#414141]">Triangle</h2>
+                <p class="text-[#414141]">Area (A) =
+                    0.5     b
+                    h</p>
+                    <div class="flex mt-4 text-[#414141]">
+                        <input id="triangle-land" type="number" class=" bg-[#e4e4e4] w-1/2 px-2 gap-4 h-8  rounded-md" placeholder="b" ><span class="ml-1" >cm</span>
+                    <input id="triangle-heigth" type="number" class=" bg-[#e4e4e4] w-1/2 ml-2 px-2 gap-4 h-8 rounded-md" placeholder="h"><span class="ml-1">cm</span>
+                    </div>
+                    <button id="triangle-btn" class="mt-10 px-20 rounded-md text-white py-3 bg-[#1090D8]">Calculate</button>
+               </div>
+              </div>
+              <!-- Second Cart -->
+              <div id="card-hover2" class="h-[100] w-full px-4 rounded-lg py-6 bg-base-100 shadow-xl border">
+                <figure>
+                  <img class="w-full h-44" src="images/rectangle.png" alt="Shoes" />
+                </figure>
+               <div class="text-center mt-5 ">
+                <h2 id="rectangle-header" class="text-2xl font-semibold text-[#414141]">Rectangle</h2>
+                <p class="text-[#414141]">Area (A) = w   x    I</p>
+                    <div class="flex mt-4 text-[#414141]">
+                        <input id="rectangle-width" type="number" class="bg-[#e4e4e4] w-1/2 px-2 gap-4 h-8  rounded-md" placeholder="w" ><span class="ml-1" >cm</span>
+                    <input id="rectangle-length" type="number" class="bg-[#e4e4e4] w-1/2 ml-2 px-2 gap-4 h-8 rounded-md" placeholder="I"><span class="ml-1">cm</span>
+                    </div>
+                    <button id="rectangle-btn" class="mt-10 px-20 rounded-md text-white py-3 bg-[#1090D8]">Calculate</button>
+               </div>
+              </div>
+
+              <!-- Third Cart -->
+              <div id="card-hover3" class="h-[100] w-full px-4 rounded-lg py-6  bg-base-100 shadow-xl border">
+                <figure>
+                  <img class="w-full h-44" src="images/parallelogram.png" alt="Shoes" />
+                </figure>
+               <div class="text-center mt-5 ">
+                <h2 id="para-header" class="text-2xl font-semibold text-[#414141]">Parallelogram</h2>
+                <p class="text-[#414141]">Area (A) = b   x h</p>
+                    <div class="flex mt-4 text-[#414141]">
+                        <input id="para-width" type="number" class="bg-[#e4e4e4] w-1/2 px-2 gap-4 h-8  rounded-md" placeholder="b" ><span class="ml-1" >cm</span>
+                    <input id="para-heigth" type="number" class="bg-[#e4e4e4] w-1/2 ml-2 px-2 gap-4 h-8 rounded-md" placeholder="h"><span class="ml-1">cm</span>
+                    </div>
+                    <button id="para-btn"class="mt-10 px-20 rounded-md text-white py-3 bg-[#1090D8]">Calculate</button>
+               </div>
+              </div>
+
+              <!-- Fourth Cart -->
+              <div id="card-hover4" class="h-[100] w-full px-4 rounded-lg py-6  bg-base-100 shadow-xl border">
+                <figure>
+                  <img class="w-full h-44" src="images/rhombus.png" alt="Shoes" />
+                </figure>
+               <div class="text-center mt-5 ">
+                <h2 id="rhombus-header" class="text-2xl font-semibold text-[#414141]">Rhombus</h2>
+                <p class="text-[#414141]">Area (A) =
+                    0.5 x
+                    d
+                    
+                    <sub>2</sub>
+                    x
+                    d
+                    <sub>2</sub>    
+                </p>
+                    <div class="flex mt-4 text-[#414141]">
+                        <input id="rhombus-d1" type="number" class="bg-[#e4e4e4] w-1/2 px-2 gap-4 h-8  rounded-md" placeholder="d1" ><span class="ml-1" >cm</span>
+                    <input id="rhombus-d2" type="number" class="bg-[#e4e4e4] w-1/2 ml-2 px-2 gap-4 h-8 rounded-md" placeholder="d2"><span class="ml-1">cm</span>
+                    </div>
+                    <button id="rhombus-btn" class="mt-10 px-20 rounded-md text-white py-3 bg-[#1090D8]">Calculate</button>
+               </div>
+              </div>
+
+
+              <!-- Fifth Cart -->
+
+              <div id="card-hover5" class="h-[100] w-full px-4 rounded-lg py-6 bg-base-100 shadow-xl border">
+                <figure>
+                  <img class="w-full h-44" src="images/pentagon.png" alt="Shoes" />
+                </figure>
+               <div class="text-center mt-5 ">
+                <h2 id="pentagon-header" class="text-2xl font-semibold text-[#414141]">Pentagon</h2>
+                <p class="text-[#414141]">Area (A) =
+                    0.5    x p x
+                    b</p>
+                    <div class="flex mt-4 text-[#414141]">
+                        <input id="pentagon-height" type="number" class="bg-[#e4e4e4] w-1/2 px-2 gap-4 h-8  rounded-md" placeholder="p" ><span class="ml-1" >cm</span>
+                    <input id="pentagon-width" type="number" class="bg-[#e4e4e4] w-1/2 ml-2 px-2 gap-4 h-8 rounded-md" placeholder="b"><span class="ml-1">cm</span>
+                    </div>
+                    <button id="pentagon-btn" class="mt-10 px-20 rounded-md text-white py-3 bg-[#1090D8]">Calculate</button>
+               </div>
+              </div>
+
+              <!-- Six Cart -->
+
+              <div id="card-hover6" class="h-[100] w-full px-4 rounded-lg py-6  bg-base-100 shadow-xl border">
+                <figure>
+                  <img class="w-full h-44" src="images/ellipse.png" alt="Shoes" />
+                </figure>
+               <div class="text-center mt-5 ">
+                <h2 id="ellipse-header" class="text-2xl font-semibold text-[#414141]">Ellipse</h2>
+                <p class="text-[#414141]">Area (A) =    π ab</p>
+                    <div class="flex mt-4 text-[#414141]">
+                        <input id="ellipse-height" type="number" class="bg-[#e4e4e4] w-1/2 px-2 gap-4 h-8  rounded-md" placeholder="a" ><span class="ml-1" >cm</span>
+                    <input id="ellipse-width" type="number" class=" bg-[#e4e4e4] w-1/2 ml-2 px-2 gap-4 h-8 rounded-md" placeholder="b"><span class="ml-1">cm</span>
+                    </div>
+                    <button id="ellipse-btn" class="mt-10 px-20 rounded-md text-white py-3 bg-[#1090D8]">Calculate</button>
+               </div>
+              </div>
+        </div>
+
+ <!--=========== Calculation Area Part Start=========== -->
+ <div class="cart-details mt-5 w-full md:w-[32%] lg:w-[34%] mx-auto pl-4 border rounded-lg">
+    <h1 class="text-2xl text-center font-bold underline mt-5 text-[#111111CC]">
+        Area Calculation : <span id="total-product">0</span> </h1>
+    </h1>
+    <div class="overflow-x-auto">
+      <table class="table w-full">
+        <thead>
+          <tr class="text-base text-[#414141]">
+            <th>No</th>
+            <th>Name</th>
+            <th>Area</th>
+            <th>Convert</th>
+          </tr>
+        </thead>
+        <tbody id="table-container">
+          <tr class="" >
+            <!-- <th>1</th>
+            <td>Triangle</td>
+            <td>25 cm<sup>2</sup></td> -->
+             
+          </tr> 
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+<!--=========== Calculation Area Part End=========== -->
+
+
+    </section>
+    <!--=========== Main Area Part End=========== -->
+   
+    
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
